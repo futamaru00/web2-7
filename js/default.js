@@ -13,4 +13,4 @@ if(answer ===number){
   message = '0~99の数字を入力してください';
 }
 
-document.getElementbyId('choice').textContent = message;
+document.getElementById('choice').textContent = message;
