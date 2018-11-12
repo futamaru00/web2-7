@@ -2,15 +2,11 @@ var number = Math.floor(Math.random()*100);
 var answer;
 
 var message;
-var count;
 
-for(var i = 1; i > 0; i++){
-  
   answer = parseInt(window.prompt('数当てゲーム。0～99の数字を入力！'));
 
   if(answer === number){
     message = 'あたり！';
-    count = i;
     break;
   }else if(answer < number){
     message = '残念！もっと大きいです';
@@ -20,7 +16,4 @@ for(var i = 1; i > 0; i++){
     message = '0~99の数字を入力してください';
   }
 
-  document.getElementById('choice').textContent = message;
-}
-
-document.getElementById('choice').textContent = message + 'あなたが間違えた回数は' + count '回'
+  document.getElementById('choice').textContent = message
