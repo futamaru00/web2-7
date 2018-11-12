@@ -16,4 +16,6 @@ var message;
     message = '0~99の数字を入力してください';
   }
 
-  document.getElementById('choice').textContent = message
+window.alert(message);
+
+document.getElementById('choice').textContent = message
