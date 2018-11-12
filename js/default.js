@@ -1,9 +1,7 @@
 var number = Math.floor(Math.random()*100);
-var answer;
+var answer = parseInt(window.prompt('数当てゲーム。0～99の数字を入力！'));
 
 var message;
-
-  answer = parseInt(window.prompt('数当てゲーム。0～99の数字を入力！'));
 
   if(answer === number){
     message = 'あたり！';
